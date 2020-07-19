@@ -1,0 +1,221 @@
+
+    body {
+        margin: 0;
+        font-family: arial,sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    #header {
+        padding: 8px 15px 0 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 13px;
+        align-items: baseline;
+    }
+    #header div {
+        margin: 10px;
+    }
+    #header .list, .all, #header button {
+        display: none;
+    }
+    #header div a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
+    #header div a:hover {
+        text-decoration: underline;
+    }
+    #header .app {
+        width: 16px;
+        height: 16px;
+    }
+    #header .app img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #header .account {
+        font-size: 20px;
+        color: #FFFFFF;
+        background-color: #33691e;
+        border-radius: 50%;
+        text-align: center;
+        padding: 4px 8px;
+    }
+
+    #body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    #body .img {
+        margin: 100px 0 30px 0;
+    }
+    #body .img img {
+        width: 272px;
+        height: auto;
+    }
+    #body .input {
+        width: 580px;
+        height: 45px;
+        border-radius: 37px;
+        border: 1px solid #d6d4eb;
+        margin-bottom: 27px;
+        display: flex;
+        overflow: hidden;
+    }
+    #body .input img {
+        padding: 10px;
+    }
+    #body .input input {
+        width: 527px;
+        height: 100%;
+        padding: 0;
+        border: none;
+        font-size: 16px;
+    }
+
+    #body #buttons button {
+        background-color: #f3f3f3;
+        color: #5f6368;
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 10px 15px;
+        border: none;
+        margin-left: 10px;
+        letter-spacing: 1px;
+
+    }
+    #body button:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
+    }
+    #body p {
+        margin-top: 30px;
+        color: #222222;
+        font-size: 13px;
+    }
+    #body p a {
+        text-decoration: none;
+    }
+    #body p a:hover {
+        text-decoration: underline;
+    }
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+    }
+    #footer #country {
+        color: #6f6f6f;
+        padding: 12px 12px 12px 30px;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    #footer div ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    #footer div ul li {
+        float: left;
+        display: inline-block;
+        margin: 0 15px;
+        line-height: 40px;
+    }
+    #footer .right {
+        float: right;
+    }
+    #footer div ul li a {
+        text-decoration: none;
+        color: #6f6f6f;
+    }
+    #footer div ul li a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 767px) {
+        #body .input {
+            width: 480px;
+        }
+        #body .input input{
+            width: 427px;
+        }
+    }
+
+    @media screen and (max-width: 555px) {
+        #header {
+            justify-content: flex-start;
+            align-items: baseline;
+            background-color: #f2f2f2;
+            padding-left: 5px;
+        }
+        #header .gmail, .app, .account {
+            display: none;
+        }
+        #header .list, .all, button {
+            display: inline-block;
+        }
+        #header .list, .all, .img, button {
+            align-self: center;
+        }
+        #header a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        #header button {
+            background-color: #FFFFFF;
+            padding: 3px 10px;
+            border: 1px solid #d6d4eb;
+            position: absolute;
+            right: 10px;
+        }
+        #body .img img{
+            width: 180px;
+            height: 60px;
+        }
+        #body .input {
+            width: 93%;
+            height: 35px;
+            border-radius: 3px;
+        }
+        #body .input img {
+            background-color: #a8bbf4;
+        }
+        #body .input input {
+            width: 95%;
+            height: 100%;
+            padding: 0 5px;
+        }
+        #body button {
+            display: none;
+        }
+        #footer #country {
+            display: none;
+        }
+        #footer div ul li {
+            float: none;
+            line-height: 30px;
+        }
+        #footer .right {
+            float: none;
+        }
+        #footer div ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
